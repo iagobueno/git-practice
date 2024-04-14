@@ -116,3 +116,19 @@ git add -A
 git commit -m "documentação sobre novas branchs"
 git push -u origin staging
 ```
+
+## Merge
+
+Agora, trocamos para a branch main e damos merge com a nossa branch staging
+
+```bash
+git checkout main				# troca para a branch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+git merge staging				# dá merge com a branch staging
+Updating 56bd29d..750efa9
+Fast-forward
+ README.md | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+```
