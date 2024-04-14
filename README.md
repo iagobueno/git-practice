@@ -68,3 +68,31 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
+## Olhando histórico de alterações e trocando versão do projeto
+
+```bash
+d28e1a4 (HEAD -> main, origin/main) HEAD@{0}: commit: alterando documentação
+77923cc HEAD@{1}: commit: adicionando arquivos iniciais
+3467452 HEAD@{2}: Branch: renamed refs/heads/master to refs/heads/main
+3467452 HEAD@{4}: commit (initial): first commit
+```
+
+## Voltando para versões iniciais
+
+Vamos supor que nossa nova versão está gerando problemas e queremos
+voltar para nossa versão inicial:
+
+```bash
+git reset --hard 3467452	# Voltando para versão anterior do projeto
+cat README.md			# Visualizando nossa documentação: 
+# git-practice
+
+```
+Vemos que deu certo, nossa documentação está na versão inicial.
+Para voltar para a versão atual:
+
+```bash
+git reset --hard d28e1a4
+HEAD is now at d28e1a4 alterando documentação
+
+```
