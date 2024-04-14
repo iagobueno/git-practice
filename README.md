@@ -96,3 +96,23 @@ git reset --hard d28e1a4
 HEAD is now at d28e1a4 alterando documentação
 
 ```
+
+## Criando novas branchs
+
+```bash
+git branch staging		# Criando uma branch chamada staging
+git branch			# Olhando as branchs existentes:
+* main
+  staging
+git checkout staging		# Trocando para a staging
+M	README.md
+Switched to branch 'staging'
+```
+
+Agora, nossas alterações vão para a branch staging.
+
+```bash
+git add -A
+git commit -m "documentação sobre novas branchs"
+git push -u origin staging
+```
